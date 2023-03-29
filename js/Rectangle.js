@@ -17,8 +17,8 @@ class Rectangle extends Figure{
     }
 
     get htmlString(){
-        return document.getElementById('results').innerHTML = 
-        `<div class="figure rectangle" style="width: WIDTHpx; height: HEIGHTpx;"></div>
+       const htmlString = 
+        `<div class="figure rectangle" style="width: ${this.width}px; height: ${this.height}px;"></div>
          <div class="infoBox">
           <h3>${this.name}</h3>
           <dl>
@@ -35,5 +35,6 @@ class Rectangle extends Figure{
             <dd>${this.circumference} px</dd>
           </dl>
          </div>`;
+         return document.getElementById('results').insertAdjacentHTML("beforeend", htmlString);
     }
 }

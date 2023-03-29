@@ -20,7 +20,7 @@ class Circle extends Figure{
     }
 
     get htmlString(){
-        let htmlString = `<div class="figure circle" style="width: DIAMETERpx; height: DIAMETERpx;"></div>
+        const htmlString = `<div class="figure circle" style="width: DIAMETERpx; height: DIAMETERpx;"></div>
         <div class="infoBox">
           <h3>Circle</h3>
           <h3>${this.name}</h3>
@@ -38,7 +38,7 @@ class Circle extends Figure{
             <dd>${this.circumference} px</dd>
           </dl>
         </div>`
-        return document.getElementById('results').insertAdjacentHTML("beforeend", htmlString)
+        return document.getElementById('results').insertAdjacentHTML("beforeend", htmlString);
         
     }
 }
