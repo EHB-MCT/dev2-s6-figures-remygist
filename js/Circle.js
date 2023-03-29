@@ -20,7 +20,7 @@ class Circle extends Figure{
     }
 
     get htmlString(){
-        const htmlString = `<div class="figure circle" style="width: DIAMETERpx; height: DIAMETERpx;"></div>
+        const htmlString = `<div class="figure circle" style="width: ${this.diameter}px; height: ${this.diameter}px;"></div>
         <div class="infoBox">
           <h3>Circle</h3>
           <h3>${this.name}</h3>

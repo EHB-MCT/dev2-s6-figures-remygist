@@ -17,7 +17,7 @@ class Square extends Rectangle{
     }
 
     get htmlString(){
-        let htmlString = `<div class="figure rectangle" style="width: WIDTHpx; height: HEIGHTpx;"></div>
+        let htmlString = `<div class="figure rectangle" style="width: ${this.size}px; height: ${this.size}px;"></div>
         <div class="infoBox">
           <h3>Circle</h3>
           <h3>${this.name}</h3>
